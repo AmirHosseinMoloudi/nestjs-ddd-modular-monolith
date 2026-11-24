@@ -1,0 +1,93 @@
+PROPRIETARY AND CONFIDENTIAL COMMERCIAL SOFTWARE LICENSE AGREEMENT
+================================================================================
+ALL RIGHTS RESERVED.
+
+IMPORTANT: PLEASE READ THIS SOFTWARE LICENSE AGREEMENT CAREFULLY BEFORE USING,
+ACCESSING, DOWNLOADING, OR COPYING ANY PART OF THIS SOFTWARE AND ITS ASSOCIATED
+DOCUMENTATION.
+
+1. PROPRIETARY NOTICES & OWNERSHIP
+--------------------------------------------------------------------------------
+This software, including its source code, compiled binaries, database schemas,
+architectural designs, interfaces, and documentation (collectively, the "Software"),
+is the exclusive, proprietary, and confidential property of the Licensor (or
+Author). Title to and ownership of all intellectual property rights in and to
+the Software (including, without limitation, all patent, copyright, trademark,
+trade secret, and other proprietary rights worldwide) shall remain strictly
+vested in the Licensor.
+
+2. STRICT LICENSE RESTRICTIONS AND PROHIBITIONS
+--------------------------------------------------------------------------------
+Unless explicitly authorized under a separate, fully executed, written commercial
+agreement signed by an authorized representative of the Licensor, ANY USE,
+REPRODUCTION, DISPLAY, PERFORMANCE, MODIFICATION, OR DISTRIBUTION OF THIS
+SOFTWARE IS EXPRESSLY AND STRICTLY PROHIBITED.
+
+Without limiting the generality of the foregoing, you are expressly forbidden to:
+
+  (a) COPY, REPRODUCE, OR DISTRIBUTE: Copy, duplicate, clone, mirror, republish,
+      transmit, broadcast, or distribute the Software or any portion thereof in
+      any form, medium, or mechanism, whether digital, physical, or virtual.
+
+  (b) COMMERCIAL EXPLOITATION: Sell, resell, license, sublicense, rent, lease,
+      loan, pledge, convey, or otherwise monetize or commercially exploit the
+      Software, directly or indirectly.
+
+  (c) SERVICE BUREAU & CLOUD HOSTING: Utilize the Software to operate a service
+      bureau, SaaS (Software as a Service), PaaS, IaaS, multi-tenant cloud offering,
+      or application service provider infrastructure for the benefit of any third
+      party.
+
+  (d) DERIVATIVE WORKS & ALTERATIONS: Modify, adapt, translate, enhance, customize,
+      or create derivative works based upon the Software, whether in whole or in
+      part.
+
+  (e) REVERSE ENGINEERING: Decompile, disassemble, reverse engineer, decrypt,
+      unbundle, or attempt to derive the source code, underlying structure, ideas,
+      algorithms, file formats, or programming interfaces of any compiled,
+      obfuscated, or binary portions of the Software.
+
+  (f) REMOVAL OF NOTICES: Remove, alter, obscure, or conceal any copyright notices,
+      trademarks, patent markings, confidentiality notices, or proprietary legends
+      contained on or within the Software.
+
+3. CONFIDENTIALITY AND TRADE SECRETS
+--------------------------------------------------------------------------------
+The Software contains highly confidential information and trade secrets of the
+Licensor. Any party granted authorized access to the Software agrees to maintain
+the strict confidentiality of the Software and to protect it from unauthorized
+disclosure using at least the same degree of care used to protect its own most
+sensitive trade secrets, but not less than a reasonable standard of care.
+
+4. AUDIT RIGHTS & EQUITABLE RELIEF
+--------------------------------------------------------------------------------
+The Licensor reserves the absolute right to audit compliance with this License.
+Any breach or threatened breach of this License will cause irreparable harm to the
+Licensor for which monetary damages alone would be inadequate. Accordingly, in
+addition to any other remedies available at law, the Licensor shall be entitled
+to seek immediate injunctive relief, specific performance, and other equitable
+remedies in any court of competent jurisdiction without the necessity of proving
+actual damages or posting a bond or other security.
+
+5. TERMINATION
+--------------------------------------------------------------------------------
+This License is effective until terminated. Any violation of the terms of this
+Agreement results in the automatic and immediate termination of all permissions
+and licenses granted herein. Upon termination, you must immediately cease all
+access and use of the Software, securely destroy all copies (in all forms and
+media) in your possession or control, and certify such destruction in writing
+upon Licensor's request.
+
+6. DISCLAIMER OF WARRANTIES
+--------------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+LICENSOR, AUTHORS, OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS
+OF DATA, LOSS OF PROFITS, BUSINESS INTERRUPTION, OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+================================================================================
+Copyright (c) 2026. All Rights Reserved.
+================================================================================

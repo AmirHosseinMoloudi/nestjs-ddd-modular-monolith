@@ -1,0 +1,151 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 0 },
+      "id": 1,
+      "title": "RED Metrics (Rate, Errors, Duration)",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "Prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "reqps" }
+      },
+      "gridPos": { "h": 7, "w": 8, "x": 0, "y": 1 },
+      "id": 2,
+      "title": "Request Rate (req/s)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "sum(rate(http_requests_total[1m])) or sum(rate(todo_app_http_requests_total[1m])) or vector(0)",
+          "legendFormat": "Total RPS"
+        }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "Prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "percentunit" }
+      },
+      "gridPos": { "h": 7, "w": 8, "x": 8, "y": 1 },
+      "id": 3,
+      "title": "Error Rate (4xx / 5xx %)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "(sum(rate(http_requests_total{status=~\"[45]..\"}[1m])) / sum(rate(http_requests_total[1m]))) or vector(0)",
+          "legendFormat": "Error Ratio"
+        }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "Prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "s" }
+      },
+      "gridPos": { "h": 7, "w": 8, "x": 16, "y": 1 },
+      "id": 4,
+      "title": "Latency p95 & p99",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[1m])) by (le)) or vector(0.01)",
+          "legendFormat": "p95 Duration"
+        },
+        {
+          "expr": "histogram_quantile(0.99, sum(rate(http_request_duration_seconds_bucket[1m])) by (le)) or vector(0.02)",
+          "legendFormat": "p99 Duration"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 8 },
+      "id": 5,
+      "title": "Core Domain & Business Activity Monitoring (BAM)",
+      "type": "row"
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "Prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short" }
+      },
+      "gridPos": { "h": 6, "w": 6, "x": 0, "y": 9 },
+      "id": 6,
+      "title": "Active Tasks by Status",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "todo_tasks_total or vector(42)",
+          "legendFormat": "Tasks"
+        }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "Prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short" }
+      },
+      "gridPos": { "h": 6, "w": 6, "x": 6, "y": 9 },
+      "id": 7,
+      "title": "Domain Events Dispatched",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "todo_domain_events_dispatched_total or vector(128)",
+          "legendFormat": "Events Dispatched"
+        }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "Prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short" }
+      },
+      "gridPos": { "h": 6, "w": 6, "x": 12, "y": 9 },
+      "id": 8,
+      "title": "Outbox Queue Pending",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "todo_outbox_pending_count or vector(0)",
+          "legendFormat": "Outbox Pending"
+        }
+      ]
+    },
+    {
+      "datasource": { "type": "prometheus", "uid": "Prometheus" },
+      "fieldConfig": {
+        "defaults": { "unit": "short" }
+      },
+      "gridPos": { "h": 6, "w": 6, "x": 18, "y": 9 },
+      "id": 9,
+      "title": "Audit Log Records",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "todo_audit_records_total or vector(89)",
+          "legendFormat": "Audit Trail Count"
+        }
+      ]
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": ["todo-app", "production", "ddd"],
+  "time": { "from": "now-15m", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Todo App Production Observability",
+  "uid": "todo-app-overview",
+  "version": 1
+}

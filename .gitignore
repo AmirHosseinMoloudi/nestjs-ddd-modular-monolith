@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production & Build outputs
+dist/
+dist-ssr/
+*.local
+.output/
+.nuxt/
+.nitro/
+.vite/
+.tsbuildinfo
+
+# Database & Persistent storage
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite3-journal
+*.db
+*.db-journal
+data/
+backend/todo.sqlite
+
+# Infrastructure & Observability data volumes
+tempo_data/
+prometheus_data/
+grafana_data/
+sqlite_data/
+
+# Environment variables & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Logs & Diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# IDEs and Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swo
+*.swp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
